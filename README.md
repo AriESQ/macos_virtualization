@@ -13,9 +13,11 @@ https://docs.docker.com/desktop/mac/install/
 Simon Willison's Docker on M1 Tutorial  
 https://til.simonwillison.net/macos/running-docker-on-remote-m1
 
-
 Running Macos in a docker container  
 https://hakin9.org/docker-osx-run-mac-in-a-docker-container/
+
+Running X64 Linux containers via Podman  
+https://edofic.com/posts/2021-09-12-podman-m1-amd64/
 
 ## Reference
 
