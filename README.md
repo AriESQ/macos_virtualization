@@ -19,6 +19,10 @@ https://hakin9.org/docker-osx-run-mac-in-a-docker-container/
 Running X64 Linux containers via Podman  
 https://edofic.com/posts/2021-09-12-podman-m1-amd64/
 
+## UTM
+UTM uses QEMU to run virtual machines (and containers?) on Macos. It can be thought of as a free alternative to Parallels.
+https://github.com/utmapp/UTM
+
 ## Reference
 
 The electric Light Company freeware utilities  
