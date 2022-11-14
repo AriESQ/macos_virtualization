@@ -34,6 +34,9 @@ https://eclecticlight.co/m1-macs/
 Investigating sandbox logging  
 https://ubrigens.com/posts/sandbox_coverage.html
 
+VirtIO documentation  
+https://docs.oasis-open.org/virtio/virtio/v1.1/csprd01/virtio-v1.1-csprd01.html
+
 ### Apple Documentation
 Hypervisor Documentation  
 https://developer.apple.com/documentation/hypervisor
@@ -54,7 +57,7 @@ Security landing page
 https://developer.apple.com/documentation/security/
 
 macos / Darwin man pages  
-https://ss64.com/osx/
+https://ss64.com/osx/  
 https://keith.github.io/xcode-man-pages/
 
 ### Useful Macos Commands
