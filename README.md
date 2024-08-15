@@ -23,6 +23,42 @@ https://edofic.com/posts/2021-09-12-podman-m1-amd64/
 UTM uses QEMU to run virtual machines (and containers?) on Macos. It can be thought of as a free alternative to Parallels.
 https://github.com/utmapp/UTM
 
+## Does QEMU use the new Apple Virtualization framework or the old Apple Hypervisor Framework? 
+The context of my question is running X86 virtual machines on Apple Silicon. From what I can tell QEMU does not implement the new Virtualization Framework. The VM app UTM appears to support both QEMU, and then UTM natively supports Apple Virtualization Framework.
+
+https://gitlab.com/qemu-project/qemu/-/blob/master/target/arm/hvf/hvf.c?ref_type=heads
+
+
+The QEMU changelog is kind of useless, it doesn't appear to be in-repo; and on the website it is broken up over several pages. https://wiki.qemu.org/ChangeLog
+
+
+Are these docs contradictory?  
+* https://lima-vm.io/docs/config/multi-arch/#fast-mode-2
+  > Rosetta is known to be much faster than QEMU User Mode Emulation. Rosetta is available for VZ instances on ARM hosts.  
+* https://lima-vm.io/docs/config/vmtype/#vz
+  > Virtualization.framework doesn’t support running “intel guest on arm” and vice versa
+
+
+https://wiki.qemu.org/ChangeLog/6.2
+> On macOS hosts with Apple Silicon CPUs we now support the 'hvf' accelerator for running AArch64 guests
+
+https://wiki.qemu.org/ChangeLog/8.2
+> User-mode emulation
+> runtime
+> Since this release, qemu linux-user implements and provides vdso for most popular architectures.
+> arm/arm64/aarch64
+
+    Emulated /proc/cpuinfo output in linux-user
+
+
+
+What is VDSO? Virtual Dynamic Shared Object  
+https://www.baeldung.com/linux/vdso-vsyscall-memory-regions 
+
+Why does qemu/target/arm/arm64/aarch64 not exist in QEMU sources? C.f. /qemu/target/i386/hvf(Apple Hypervisor Framework)  
+
+https://gitlab.com/qemu-project/qemu/-/tree/master/target/i386/hvf
+
 ## Reference
 
 The electric Light Company freeware utilities  
