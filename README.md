@@ -35,7 +35,7 @@ Investigating sandbox logging
 https://ubrigens.com/posts/sandbox_coverage.html
 
 VirtIO documentation  
-https://docs.oasis-open.org/virtio/virtio/v1.1/csprd01/virtio-v1.1-csprd01.html
+https://docs.oasis-open.org/virtio/virtio/v1.3/virtio-v1.3.html
 
 ### Apple Documentation
 Hypervisor Documentation  
